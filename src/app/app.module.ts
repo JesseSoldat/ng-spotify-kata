@@ -11,12 +11,15 @@ import { Search } from './components/search/search.component';
 
 import { Home } from './components/pages/home.component';
 import { About } from './components/pages/about.component';
+import { Artists } from './components/pages/artist.component';
+
 
 import { SpotifyService } from './services/spotify.service';
 
 const appRoutes: Routes = [
   { path: '', component: Home},
-  { path: 'about', component: About}
+  { path: 'about', component: About},
+  { path: 'artist/:id', component: Artists}
 
 ];
 
@@ -27,7 +30,8 @@ const appRoutes: Routes = [
     Navbar,
     Search,
     Home,
-    About
+    About,
+    Artists
   ],
   imports: [
     BrowserModule,

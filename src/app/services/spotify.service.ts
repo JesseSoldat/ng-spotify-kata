@@ -21,11 +21,15 @@ export class SpotifyService {
 	}
 
 	getArtist(id:string){
-
+		this.artistUrl = this.baseUrl+'artists/'+id;
+		return this.http.get(this.artistUrl)
+			.map(res => res.json());
 	}
 
 	getAlbums(artistId:string){
-
+		this.albumsUrl = this.baseUrl+'artists/'+artistId+'/albums';
+		return this.http.get(this.albumsUrl)
+			.map(res => res.json());
 	}
 
 	getAlbum(id:string){

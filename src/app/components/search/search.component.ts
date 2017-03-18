@@ -19,7 +19,7 @@ export class Search {
 		this.spotiyService.searchMusic(this.searchStr)
 			.subscribe(res => {
 				this.searchRes = res.artists.items;
-				console.log(this.searchRes);
+			
 			})
 	}
 }
