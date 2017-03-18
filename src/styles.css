@@ -33,7 +33,7 @@
 
 #viewSpotifyBtn {
 	position: absolute;
-	top: 10px;
+	top: 0px;
 	right: 10px;
 	padding: 20px;
 }
@@ -42,7 +42,7 @@
 	margin: 60px auto;
 	text-align: center;
 	background: #333;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	border: #666 1px solid;
 }
 
