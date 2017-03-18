@@ -33,6 +33,8 @@ export class SpotifyService {
 	}
 
 	getAlbum(id:string){
-
+		this.albumUrl = this.baseUrl+'albums/'+id;
+		return this.http.get(this.albumUrl)
+			.map(res => res.json());
 	}
 }

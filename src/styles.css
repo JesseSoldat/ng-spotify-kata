@@ -1,3 +1,53 @@
 .navbar{
     margin-bottom:0;
 }
+
+.artist-header {
+	padding-bottom: 60px;
+	margin-bottom: 40px;
+	border-bottom: solid 1px #333;
+}
+
+.artist-thumb {
+	width: 160px;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+}
+
+.artist-albums .well {
+	margin-bottom: 20px;
+	overflow: auto;
+	min-height: 400px;
+	position: relative;
+}
+.artist-albums .well h5 {
+	margin: 20px auto;
+	line-height: 20px;
+}
+.artist-albums .well a {
+	position: absolute;
+	bottom: 10px;
+	width: 80%;
+}
+
+#viewSpotifyBtn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 20px;
+}
+
+#album {
+	margin: 60px auto;
+	text-align: center;
+	background: #333;
+	padding: 10px 20px;
+	border: #666 1px solid;
+}
+
+
+
+.album-thumb {
+	width: 100%;
+}
