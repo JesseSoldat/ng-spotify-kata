@@ -7,9 +7,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { Jumbotron } from './components/jumbotron/jumbotron.component';
 import { Navbar } from './components/navbar/navbar.component';
+import { Search } from './components/search/search.component';
 
 import { Home } from './components/pages/home.component';
 import { About } from './components/pages/about.component';
+
+import { SpotifyService } from './services/spotify.service';
 
 const appRoutes: Routes = [
   { path: '', component: Home},
@@ -22,6 +25,7 @@ const appRoutes: Routes = [
     AppComponent,
     Jumbotron,
     Navbar,
+    Search,
     Home,
     About
   ],
@@ -31,7 +35,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
